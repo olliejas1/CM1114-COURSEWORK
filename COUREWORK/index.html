@@ -1,55 +1,148 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/styles.css">
 <html>
-    <head>
-        <title>House Music Society</title>
 
+<head>
+        <title>House Music Society</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <h1>House Music Society</h1>
+            <img id ="logo" src="images/logo.png" witdh="100" height="100" alt="Logo picture">
+            <h1>HMS|House Music Society</h1>
+            <div id="login">
+<form>
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<button type="button" onclick="login()" >Login</button>
+<script>
+  var counter = 2;
+  function login(){
+  if(counter % 2 == 0){
+  alert('You have been logged in!');
+  }
+  else {
+  alert('You have been logged out!');
+  }
+  counter += 1;
+  }
+  </script>
+  
+</form>
+</div>
 
         </header>
 
+       
         <nav>
-            <a href="contact_us.html">
-            <button>Contact Us</button></a>
+          <a href="index.html">
+              <button id="active">Home</button>
+          </a>
+          
+                      <a href="contact_us.html">
+                      <button>Contact Us</button></a>
+          
+                      <a href="current_members.html">
+                      <button>Current Members</button></a>
+          
+                      <a href="event_calendar.html">
+                      <button>Event Calendar</button></a>
+          
+                      <a href="img_gallery.html">
+                      <button>Image Gallery</button></a>
 
-            <a href="current_members.html">
-            <button>Current Members</button></a>
+                      <a href="videos.html">
+                        <button>Videos</button></a>
 
-            <a href="event_calendar.html">
-            <button>Event Calendar</button></a>
-
-            <a href="img_gallery.html">
-            <button>Image Gallery</button></a>
-
-        </nav>
+                        <a href="playlist.html">
+                          <button>Playlist</button></a>
+                  </nav>
+          
+      
         <main>
             <h3>Welcome to the House Music Society</h3>
             <p>The House Music Society is a vibrant and inclusive community that celebrates the rich and diverse genre of house music. With its roots in the electronic dance music scene, the society brings together enthusiasts, DJs, producers, and fans who share a passion for the infectious beats and soulful melodies that characterize house music. The society serves as a hub for music exploration, fostering a sense of unity among its members through events, workshops, and collaborative projects. Whether promoting established artists or nurturing emerging talent, the House Music Society creates an environment where individuals can connect, learn, and groove to the pulsating rhythm that defines the essence of house music culture.   </p>
-        <table>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/bibi.jpg" class="d-block w-100" alt="Micheal Bibi" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/boris.jpg" class="d-block w-100" alt="Boris Brechuja" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/shm.jpg" class="d-block w-100" alt="Swedish House Mafia" height="500">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+        <table id="top10">
+        <th><h1>OUR TOP 10</h1></th>
+
         <tr><th>DJ</th><th>Name</th><th>Favourite Song</th></tr>
-        <tr><td><img src='images/fisher.jpg' width="200" height="200" alt="Fisher Picture"></td><td>Fisher</td><td>Take it Off</td></tr>
-        <tr><td><img src='images/pawsa.jpg' width="200" height="200" alt="Pawsa Picture"></td><td>Pawsa</td><td>BANANAS</td></tr>
-        <tr><td><img src='images/peggygou.jpg' width="200" height="200" alt="Peggy Gou Picture"></td><td>Peggy Gou</td><td>I Believe In Love Again</td></tr>
-        <tr><td><img src='images/calvinharris.jpg' width="200" height="200" alt="Calvin Harris Picture"></td><td>Calvin Harris</td><td>How Deep Is Your Love</td></tr>
-        <tr><td><img src='images/fredagain.jpg' width="200" height="200" alt="Fred Again Picture"></td><td>Fred Again</td><td>leavemealone</td></tr>
-        <tr><td><img src='images/sammyvirji.jpg' width="200" height="200" alt="Sammy Virji Picture"></td><td>Sammy Virji</td><td>If U Need it</td></tr>
-        <tr><td><img src='images/yasmingardezi.jpg' width="200" height="200" alt="Yasmin Gardezi Picture"></td><td>Yasmin Gardezi</td><td>Wegue Wegue Remix</td></tr>
-        <tr><td><img src='images/saralandry.jpg' width="200" height="200" alt="Sara Landry Picture"></td><td>Sara Landry</td><td>Paper Planes Remix</td></tr>
-        <tr><td><img src='images/elibrown.jpg' width="200" height="200" alt="Eli Brown Picture"></td><td>Eli Brown</td><td>Be The One</td></tr>
-        <tr><td><img src='images/lottiej.jpg' width="200" height="200" alt="Lottie J Picture"></td><td>Lottie J</td><td>Let You Go</td></tr>
+        
+        <tr><td><img src='images/fisher.jpg' width="150" height="150" alt="Fisher Picture"></td><td>Fisher</td><td>Take it Off</td></tr>
+        
+        <tr><td><img src='images/pawsa.jpg' width="150" height="150" alt="Pawsa Picture"></td><td>Pawsa</td><td>BANANAS</td></tr>
+        
+        <tr><td><img src='images/peggygou.jpg' width="150" height="150" alt="Peggy Gou Picture"></td><td>Peggy Gou</td><td>I Believe In Love Again</td></tr>
+        
+        <tr><td><img src='images/calvinharris.jpg' width="150" height="150" alt="Calvin Harris Picture"></td><td>Calvin Harris</td><td>How Deep Is Your Love</td></tr>
+        
+        <tr><td><img src='images/fredagain.jpg' width="150" height="150" alt="Fred Again Picture"></td><td>Fred Again</td><td>leavemealone</td></tr>
+        
+        <tr><td><img src='images/sammyvirji.jpg' width="150" height="150" alt="Sammy Virji Picture"></td><td>Sammy Virji</td><td>If U Need it</td></tr>
+        
+        <tr><td><img src='images/yasmingardezi.jpg' width="150" height="150" alt="Yasmin Gardezi Picture"></td><td>Yasmin Gardezi</td><td>Wegue Wegue Remix</td></tr>
+        
+        <tr><td><img src='images/saralandry.jpg' width="150" height="150" alt="Sara Landry Picture"></td><td>Sara Landry</td><td>Paper Planes Remix</td></tr>
+        
+        <tr><td><img src='images/elibrown.jpg' width="150" height="150" alt="Eli Brown Picture"></td><td>Eli Brown</td><td>Be The One</td></tr>
+        
+        <tr><td><img src='images/lottiej.jpg' width="150" height="150" alt="Lottie J Picture"></td><td>Lottie J</td><td>Let You Go</td></tr>
 
 
         </table>
+        <h3>LATEST TALKING POINTS</h3><br/>
+          
+            <br/><h2><u>Underground Revival</u></h2>
+              <p>While commercial EDM remains popular, there's been a resurgence of interest in underground house scenes. This has been driven by a desire for more intimate club experiences and a return to the roots of the genre.</p>
+          
+            <br/><h2><u>Evolution of Subgenres</u></h2>
+              <p>House music has always been known for its diverse subgenres, from deep house to tech house to progressive house. Trends continue to emerge within these subgenres, with artists pushing boundaries and blending styles.</p>
+            
+            <br/><h2><u>Streaming Dominance</u></h2>
+              <p>Like most genres, house music has seen a shift towards streaming platforms as the primary means of consumption. This has influenced not only how music is distributed but also how artists connect with their audience through playlists and curated content.</p>
         
+            <br><h2><u>Electronic Dance Music (EDM) Festivals</u></h2>
+              <p>While not exclusively focused on house music, EDM festivals often feature prominent house artists and DJs. These events serve as hubs for the genre, showcasing both established acts and up-and-coming talent.</p>
+      
+        <br/><h2><u>YASMIN GARDEZI'S BOILER ROOM</u></h2>
+        <div>
+          <p>Yasmin Gardezi announces herself on the big stage taking the roof off Dublin! Keeping vibes high and bass low in the Irish Capital!</p>
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fboilerroom.tv%2Fvideos%2F894484532229972%2F&show_text=false&width=380&t=0" width="570" height="714" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <p>This track is one of our favourites at the moment, this being her Wegue Wegue Remix!</p>
+        
+        </div>
         </main>
         
         <aside>
-
-        </aside>
+        
+      
+      </aside>
 
         <footer>
-
+        <p>COPYRIGHT OLIWIER JASNOCH</p>
         </footer>
 
 
